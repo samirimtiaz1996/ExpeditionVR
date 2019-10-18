@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class GazeInteractionInfo : MonoBehaviour
 {
 
-    public Camera camera;
+ //   public Camera camera;
     public float gazeTime = 2f;
     private float timer;
     private bool gazedAt;
@@ -15,7 +15,7 @@ public class GazeInteractionInfo : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        dist =  camera.transform.position- transform.position;
+       // dist =  camera.transform.position- transform.position;
     }
 
 
@@ -24,7 +24,7 @@ public class GazeInteractionInfo : MonoBehaviour
     void Update()
     {
 
-        transform.position = camera.transform.position - dist;
+     //   transform.position = camera.transform.position - dist;
 
         if (gazedAt)
         {

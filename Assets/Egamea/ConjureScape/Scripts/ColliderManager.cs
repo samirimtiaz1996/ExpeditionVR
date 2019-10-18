@@ -23,9 +23,12 @@ public class ColliderManager : MonoBehaviour {
 
 			if (distanceToCamera < 10.0f) {
 				EnableOrDisableColliders (true);
-               
+               // Debug.Log("Collision scipt");
 
-			} else {
+
+
+            }
+            else {
 				EnableOrDisableColliders (false);
                 
             }
