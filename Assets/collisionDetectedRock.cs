@@ -14,9 +14,8 @@ public class collisionDetectedRock : MonoBehaviour
         
     }
 
-    void OnCollisionEnter()  //Plays Sound Whenever collision detected
+    void update()  //Plays Sound Whenever collision detected
     {
-        GetComponent<AudioSource>().Play();
-        Debug.Log("Collision rock");
+       // if(transform.localPosition.x>296 && transform.localPosition.x<354)
     }
 }
